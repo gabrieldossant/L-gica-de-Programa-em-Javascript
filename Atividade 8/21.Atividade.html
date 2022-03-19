@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Project</title>
+    <script>
+        /* 21 - Escreva um programa que leia as notas das duas avaliações normais e a    */
+        /* nota da avaliação optativa. Calcular a média do semestre considerando que a   */
+        /* prova optativa substitui a nota mais baixa entre as duas primeiras avaliações.*/
+        /* Escrever a média e mensagens que indiquem se o aluno foi aprovado,            */
+        /* reprovado ou está em exame, de acordo com as informações abaixo:              */
+        
+        var av1 = parseInt(prompt("Informe a nota da av1: "));
+        var av2 = parseInt(prompt("Informe a nota da av2: "));
+        var av0 = parseInt(prompt("Informe a nota da avaliação optativa: "));
+        var soma;
+        var media;
+        if (av1 == av2) {
+            soma = (av1 + av2)
+        }
+        if (av1 < av2) {
+            soma = (av2 + av0)
+        }
+        if (av1 > av2) {
+            soma = (av1 + av0)
+        }
+        media = (soma / 2)
+        if (media >= 6) {
+            alert("Parabéns! Você foi APROVADO!");
+        }
+        if (media < 3) {
+            alert("REPROVADO!")
+        }
+        if (media >= 3 && media < 6) {
+            alert("Você está de EXAME!")
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

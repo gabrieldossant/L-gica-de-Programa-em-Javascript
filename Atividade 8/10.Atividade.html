@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Project</title>
+    <script>
+        /* 10. Escreva um programa que calcule a média de quatro números informados  */
+        /* pelo usuário, mas somente se esses números forem maiores que 0 e menores  */
+        /* que 10. No final, se a média for maior que cinco o usuário receberá uma   */ 
+        /* mensagem "Você passou no teste". Em qualquer outra situação, ele receberá */
+        /* uma mensagem de "tente novamente"                                         */ 
+
+        var nota1 = parseInt(prompt("Digite a primeira nota de [0/10] : "));
+        var nota2 = parseInt(prompt("Digite a segunda nota de [0/10] : "));
+        var nota3 = parseInt(prompt("Digite a terceira nota de [0/10] : "));
+        var nota4 = parseInt(prompt("Digite a quarta nota de [0/10] : "));
+        var soma = (nota1 + nota2 + nota3 + nota4);
+        var media = (soma / 4);
+        if (media > 5) {
+            alert("Você passou no teste! ");
+        }
+        if (media < 5) {
+            alert("Reprovado");
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

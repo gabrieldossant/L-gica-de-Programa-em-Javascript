@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Project</title>
+    <script>
+        var tamanhoDaPista = parseInt(prompt("Informe o tamanho da pista: "));
+        var voltas = parseInt(prompt("Informe o número de voltas: "));
+        var numReabastecimento = parseInt(prompt("Quantos reabastecimentos deseja fazer: "));
+        var consumoCarro = parseInt(prompt("Qual o consumo do carro: "));
+
+        var voltasParada1 = voltas/numReabastecimento;
+
+        var distanciaParada1 = (voltasParada1 * tamanhoDaPista) / 1000;
+
+        var consumoParada1 = consumoCarro * distanciaParada1;
+
+        alert("A distância percorrida até a primeira parada é " + distanciaParada1);
+        alert("O número de voltas até a primeira parada é " + voltasParada1);
+        alert("O carro vai gastar " + consumoParada1 + "km até a parada 1");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

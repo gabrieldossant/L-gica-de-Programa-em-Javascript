@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Project</title>
+    <script>
+        /* 7. Faça um programa que receba quatro valores informados pelo usuário, mas */
+        /* informe somente o primeiro, o último e o maior de todos eles (considere que */
+        /* todos os números informados serão diferentes) */
+        var valor1 = parseInt(prompt("Informe o primeiro valor: "));
+        var valor2 = parseInt(prompt("Informe o segundo valor: "));
+        var valor3 = parseInt(prompt("Informe o terceiro valor: "));
+        var valor4 = parseInt(prompt("Informe o quarto valor: "));
+        
+        alert("O primeiro valor digitado foi " + valor1);
+        alert("O ultimo valor digitado foi " + valor4);
+
+        if (valor1 > valor2 && valor1 > valor3 && valor1 > valor4) {
+            alert("O maior número digitado foi " + valor1 + " o primeiro número digitado. ");
+        }
+        if (valor2 > valor1 && valor2 > valor3 && valor2 > valor4) {
+            alert("O maior número digitado foi " + valor2 + " o segundo número digitado. ");
+        }
+        if (valor3 > valor1 && valor3 > valor2 && valor3 > valor4) {
+            alert("O maior número digitado foi " + valor3 + " o terceiro número digitado. ");
+        }
+        if (valor4 > valor1 && valor4 > valor2 && valor4 > valor3) {
+            alert("O maior número digitado foi " + valor4 + " o ultimo número digitado. ");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

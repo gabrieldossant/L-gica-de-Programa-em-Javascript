@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Project</title>
+    <script>
+        /* 24 - Um zoológico muito louco                                                                          */
+        /* Escreva um programa que leia a idade de 2 javalis e 2 girafas (considere que a idade dos javalis será  */
+        /* sempre diferente, assim como das girafas ). Calcule e escreva a soma das idades do javali mais velho   */
+        /* com a girafa mais nova, e o produto das idades do javali mais novo com a girafa mais velha.            */
+        
+        var javali = 0;
+        var girafa = 0;
+        var contador1 = 1;
+        var contador2 = 1;
+        var maiorJ = 0;
+        var menorJ = 0;
+        var maiorG = 0;
+        var menorG = 0;
+        while (contador1 < 2) {
+            var idadeJ = parseInt(prompt("Digite a idade do Javali: "));
+            contador1++
+        }
+        while (contador2 < 2) {
+            var idadeG = parseInt(prompt("Digite a idade da Girafa: "));
+        }
+        if (contador1 == 1) {
+            maiorJ = idadeJ
+            menorJ = idadeJ
+        } else {
+            if (idadeJ > maiorJ) {
+                maiorJ = idadeJ
+            }
+            if (idadeJ < menorJ) {
+                menorJ = idadeJ
+            }
+        }
+        if (contador2 == 1) {
+            maiorG = idadeG
+            menorG = idadeG
+        } else {
+            if (idadeG > maiorG) {
+                maiorG = idadeG
+            }
+            if (idadeG < menorG) {
+                menorG = idadeG
+            }
+        }
+        alert("O Javali mais velho tem a idade " + maiorJ);
+        alert("O Javali mais novo tem a idade " + menorJ);
+        alert("A girafa mais velha tem a idade " + maiorG);
+        alert("A girafa mais nova tem a idade " + menorG);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

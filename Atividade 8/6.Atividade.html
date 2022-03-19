@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Project</title>
+    <script>
+        /* 6. Faça um programa que leia 10 valores informados pelo usuário, calcule, */
+        /* exiba os números informados e escreva a média aritmética desses valores lidos. */
+        
+        var c = 1;
+        var soma = 0;
+        while (c <= 10) {
+            var num = parseInt(prompt("Informe o " + c + " número: "));
+            soma += num;
+            c++  
+        }
+        var media = (soma / c);
+        alert("A soma dos valores é " + soma);
+        alert("A média aritmética do total é " + media);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

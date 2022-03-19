@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Project</title>
+    <script>
+        /* 23 - Faça um programa em que o usuário informe 20 valores e no final, escreva */
+        /* o maior e o menor valor lido.                                                 */
+        var contador = 1;
+        var maior = 0;
+        var menor = 0;
+        
+        while (contador <= 20) {
+            var c1 = parseInt(prompt("Informe o " + contador + " número: "));
+            if (contador == 1) {
+                maior = c1;
+                menor = c1;
+            }
+            else {
+                if (c1 > maior) {
+                    maior = c1
+                }
+                if (c1 < menor) {
+                    menor = c1
+                }
+            }
+            contador++
+        }
+        alert("O maior número digitado foi " + maior);
+        alert("O menor número digitado foi " + menor);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
